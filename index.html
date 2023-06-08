@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Fetch</title>
+  </head>
+  <style>
+    * {
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: url("./img/back.jpg") center no-repeat fixed;
+    }
+    .posts {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+    }
+    h1 {
+      color: #ffffff;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .post {
+      max-width: 700px;
+      height: 200px;
+      border: 1px solid #90c0ff;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: rgb(54, 40, 159) 0px 5px 20px;
+      background: #2f2f49;
+    }
+    .post h2 {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    .post p {
+      color: #fff;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+        sans-serif;
+      font-size: 19px;
+    }
+    span {
+      color: #4144ff;
+      font-size: 33px;
+    }
+    .sort {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      list-style-type: none;
+      margin-bottom: 50px;
+    }
+    .sort button {
+      font-size: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0048ff;
+      border: none;
+      border-radius: 20px;
+      padding: 8px;
+      box-shadow: rgb(54, 40, 159) 0px 5px 20px;
+      transition: 0.2s ease-in-out;
+    }
+    .sort button:hover {
+      background: #0039cb;
+    }
+    .pagination {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 20px;
+      flex-direction: row;
+      list-style-type: none;
+    }
+    .number {
+      padding: 20px;
+      background-color: #002071;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <h1>JsonPlaceHolder Posts</h1>
+      <div class="sort">
+        <button id="1" class="sortItem">по дате</button>
+        <button id="2" class="sortItem">по названию</button>
+        <button id="3" class="sortItem">по популярности</button>
+      </div>
+      <div class="posts"></div>
+    </div>
+    <!-- <script src="./main.js"></script> -->
+    <script src="./main.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>
